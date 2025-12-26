@@ -21,10 +21,13 @@ Information is transferred one-way typically with a server-client relationship. 
 Furthermore, when a client-server connection is established through a REST API, endpoints are created a designated depending on the scope of information a client is allowed to get.
 
 The connection endpoints and the information behind those endpoints follows the syntax of a URL.
-    - DN or IP/<id>/<id>/... 
+
+    - DN or IP/id/id/... 
     - Continued to however many ids you may use to specify what information you want to get.
+
 How you can define this actually is more freeform, however there are standards that are more widely used and understood.
-    - api.DN or IP/<id>/...
+
+    - api.DN or IP/id/...
 
 ### Why not connect a client directly to a database?
 Generally speaking, it's not advisable because security problems. If someone were to directly access a server, they have no limit to the kind of information they are able to access.
