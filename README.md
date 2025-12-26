@@ -9,6 +9,7 @@ My understanding of how a REST API works is incredibly limited (teetering on no 
 1. `Understanding`
     - Within the repo I will be including all of the notes I take in regards to REST API's, how they work, their primary function, how the individual functions work, etc.
     - The notes will be as comprehensive as I can make them, hopefully if anyone stumbles upon my project and would like to learn REST API's themselves, this repo will be a good place for them to get a full understanding all in one place.
+    - Important Note: I will be treating this as if I'm writing a guide for someone who is completely clueless, so there will likely be a lot of redundant information for those who are already fairly well versed within this field.
 
 2. `Implementation`
     - After understanding exactly what I'm working on and the design of it, I will be attempting to implement it myself using tutorials and help online in order to make sure I have a functioning and working program that is able to perform its primary function.
@@ -16,4 +17,3 @@ My understanding of how a REST API works is incredibly limited (teetering on no 
 3. `Expansion`
     - I don't think it would be right to call a piece of code "mine" if I just lift it from someone else's tutorial so I will be attempting to include my own functions, implementations or possible improvements. Expanding on how the code works and what I will be adding will be explicitly documented. If there are any kind of performance improvements or even failures, they will be documented as well in a developer log I will include in this repo.
 
-    
