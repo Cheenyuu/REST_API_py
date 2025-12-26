@@ -37,5 +37,15 @@ In the video Caleb goes over the reasons why this kind of system, the kind where
 The main argument is that it's easy to make changes to that will be applicable to many different products or devices, having a middleman that isn't explicitly seen allows for modifications to be made discretely.
 Interoperability just describes the ability of your API to be accessed an how it exchanges information. (https://www.ibm.com/think/topics/interoperability)
 
+### Methods
+
+`Get` - Retrieve
+`Post` - Write
+`Delete` - Delete
+`Put` - Rewrite/Update [idempotent]
+
+Post and Put do have a clear distinction between how they are used but it is sometimes a gray area because both of them write to a server. But it's fairly easy to follow that Put will simply update data that already exists while Post is more for adding data.
+
+#### CRUD : Create, Read, Update, Delete
 
 
