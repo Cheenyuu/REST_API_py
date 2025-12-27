@@ -55,7 +55,11 @@ Set-ExecutionPolicy -ExecutionPolicy remoteSigned -Scope CurrentUser
 
 This will allow you to run scripts that are generated using tools or tools created locally.
 
+---
+
 ### Important Note: I will not be going over every single step of the tutorial within this devlog, only what I struggle with or what I may be confused by. For anyone who is reading this in order to learn how to write their own REST API, please watch the video that I linked in the rest-api-nodes.md within notes.
+
+---
 
 I installed flask and flask-sqlalchemy using pip3 while I was within my virtual env, however when trying to make a new application with 
 
@@ -77,6 +81,8 @@ $env:FLASK_APP = "app.py"
 
 which still makes sense but wow.
 
+---
+
 ### Woohoo my first error!
 ```
 (.venv) > flask run
@@ -96,6 +102,8 @@ ImportError: cannot import name 'flask' from 'flask' (E:\Personal\REST\.venv\Lib
 ```
 
 Really simple error honestly. I don't think I wanna always write when I get any kind of error, but this one is just special because it's my first one so I'm gonna include it.
+
+---
 
 ### It's working!
 So far, everything is going great and there is no issue.
@@ -144,6 +152,8 @@ Instance: E:\Personal\REST\instance
 
 Running it in a flask shell makes things really easy, you just need to make sure you define what application you're using beforehand, but once you do that, you don't have to do a lot of importing at all.
 
+---
+
 ```
 >>> db.create_all()
 >>> drink = Drink(name="Grape Soda", description="Tastes like grapes")
@@ -157,4 +167,10 @@ Grape Soda - Tastes like grapes
 
 Just documenting some of the commands so I can come back and look at them without needing to scrub through the whole video. 
 
+---
+
 ### Also to note: I will not be posting Caleb's code onto my repo. Honestly it just makes sense not to, if you want to follow his tutorial again, please watch the video it's very helpful. But to clarify, all of these things I'm running into so far is just from following his tutorial.
+
+I'll probably need to install Postman soon...
+
+---
