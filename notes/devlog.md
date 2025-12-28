@@ -176,3 +176,28 @@ Just documenting some of the commands so I can come back and look at them withou
 I'll probably need to install Postman soon...
 
 ---
+
+## 12/27/2025
+
+Okay, so how I'm going to try to make this work for me is by making a scheduler, really bare bones, but I'm going to take the general principles of the tutorial and see if I can add my own stuff to it.
+
+The goal is to make pages for every user, then from there, each user will have events attached to their scheduler.
+
+The first problem I'm coming across is managing to store every event under a username.
+
+I can have 
+```
+Class User(database.model):
+  user_name = database.column(database.string(100), nullable = False)
+```
+But the confusion comes because I can't just use
+```
+  user_event = {}
+```
+This doesn't store it into the database.
+
+But this makes me realize something, originally I want to just store it as a dictionary within a database, but I did some research into databases during the summer and from what I remember, it sometimes can be good practice to seperate information like this into seperate databases.
+
+I can't actually remember if this is the case, but it would be cool to set up two databases and have them interact with the API, see if I can get the API to update two databases at once possibly.
+
+I'm going to try to implement that.
